@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: helaili/jekyll-action@master
+      - uses: jeffreytse/jekyll-deploy-action@v0.2.1
         with:
           token: ${{ secrets.PUBLISH_TOKEN }}
