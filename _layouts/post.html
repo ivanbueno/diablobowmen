@@ -21,7 +21,7 @@ layout: default
 					</li>
 					{% for tag in page.tags %}
           <li class="inline tag_list_item">
-	    <a href="/tag/{{ tag }}">{{ tag }}</a>
+	    <a href="/tag/{{ tag | downcase }}">{{ tag }}</a>
             {% if forloop.last == true %}{% else %}
               <span>,</span>
             {% endif %}
